@@ -8,13 +8,14 @@ Pod::Spec.new do |spec|
  spec.license   = "MIT"
  spec.author       = { "Danyal Arshad" => "danyal.arshad1212@gmail.com" }
  spec.platform   = :ios, "12.0"
- spec.source    = { :git => "https://github.com/DanyalMD/DemoProject.git"}
- spec.swift_versions = "4.0"
- #spec.source_files = "DemoProject/**/*.{h,m,swift}"
-   spec.dependency "IQKeyboardManagerSwift"
-#spec.resource_bundles = {
-#'DemoProject' => [
-  #  ]
-  #}
-end
+ spec.source    = { :git => "https://github.com/DanyalMD/DemoProject/tree/main/DemoProject"}
+# spec.swift_versions = "4.0"
+ spec.source_files = "DemoProject/**/*.{h,m,swift}"
+ spec.dependency 'IQKeyboardManagerSwift', '~> 6.5.9'
+ spec.resource_bundles = {
+    'DemoProject' => [
+        'DemoProject/**/*.{storyboard,xcassets}'
+    ]
+  }
 
+end

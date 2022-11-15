@@ -6,6 +6,6 @@ target 'DemoProject' do
   use_frameworks!
 
   # Pods for DemoProject
-  pod 'IQKeyboardManagerSwift'
+  pod 'IQKeyboardManagerSwift', '6.5.9'
 
 end
